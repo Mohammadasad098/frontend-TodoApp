@@ -60,7 +60,6 @@ const editTodo = async (id) => {
   return (
     <>
 <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-8 px-4">
-      {/* Form Section */}
       <form
         onSubmit={addTodo}
         className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md mb-8"
@@ -92,7 +91,7 @@ const editTodo = async (id) => {
         </button>
       </form>
 
-      {/* Todo List Section */}
+
       <div className="w-full max-w-2xl">
         {data.length > 0 ? (
           data.map((item) => {
